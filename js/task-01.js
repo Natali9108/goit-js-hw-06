@@ -2,7 +2,7 @@ const categoriesItemRef = document.querySelectorAll(".item");
 
 console.log(`Number of categories: ${categoriesItemRef.length}`);
 
-for (let el of categoriesItemRef) {
+[...categoriesItemRef].map((el) =>
 	console.log(`Category: ${el.querySelector("h2").textContent}
-	  Elements: ${el.querySelector("ul").children.length}`);
-}
+Elements: ${el.querySelector("ul").children.length}`)
+);
