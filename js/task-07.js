@@ -4,6 +4,7 @@ const refs = {
 };
 
 refs.input.addEventListener("change", onInputFontSizeControl);
-function onInputFontSizeControl() {
-	refs.spanText.style.fontSize = `${refs.input.value}px`;
+function onInputFontSizeControl(event) {
+	const rangeValue = event.currentTarget.value;
+	refs.spanText.style.fontSize = `${rangeValue}px`;
 }
