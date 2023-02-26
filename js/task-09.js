@@ -9,7 +9,7 @@ function getRandomHexColor() {
 		.padStart(6, 0)}`;
 }
 
-const handelChangeBackgroundColorBody = (event) => {
+const handelChangeBackgroundColorBody = () => {
 	document.body.style.backgroundColor = getRandomHexColor();
 	refs.spanText.textContent = getRandomHexColor();
 };
