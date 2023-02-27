@@ -10,8 +10,9 @@ function getRandomHexColor() {
 }
 
 const handelChangeBackgroundColorBody = () => {
-	document.body.style.backgroundColor = getRandomHexColor();
-	refs.spanText.textContent = getRandomHexColor();
+	const randomColor = getRandomHexColor();
+	document.body.style.backgroundColor = randomColor;
+	refs.spanText.textContent = randomColor;
 };
 
 refs.changeColorBtn.addEventListener("click", handelChangeBackgroundColorBody);
